@@ -17,9 +17,12 @@ If a match was found on the MRN, the patient record will display.
 
 ## Backend API Set-up
 Setting up the development server for the backend api
-```cd api```
-```npm install```
-```npm start```
+> ```cd api```
+
+> ```npm install```
+
+> ```npm start```
+
 
 The server will run on port `:5000`
 
@@ -27,9 +30,11 @@ The server will run on port `:5000`
 ## Frontend Set-up
 Open up another terminal and enter the following to run the frontend dev server:
 
-```cd client```
-```npm install```
-```npm start```
+> ```cd client```
+
+> ```npm install```
+
+> ```npm start```
 
 **NOTE** 
 Currently, the backend API is set to run on local port `:5000` and the frontend runs on local port `:3000`
