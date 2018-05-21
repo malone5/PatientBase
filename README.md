@@ -1,7 +1,13 @@
-# PatientBase exercise
-This exercise consists of two parts:
-1. ReactJS implementation of a basic API.
-2. Minimal backend API with two endpoints.
+# PatientBase
+PatientBase is web application build with a backend using Node.js/Express.js and a fronend using React.js. PatientBase
+allows the user 2 major functions. (1) The ability to search a patient data set and (2) lookup specific records based on their Medicall Record Number (MRN)
+
+To search patient select the [Patients] tab and type in a name. The table with automacally filter and allows the user to sort on id, name, or MRN. You can also
+navigate straight to a patient record by clicking on their MRN.
+
+To look up a specific patient record, select the [MRM Lookup] tab, enter a valid MRN and press enter to submit.
+If a match was found on the MRN the patient record will display.
+
 
 
 ## Tool versions used
@@ -11,9 +17,9 @@ This exercise consists of two parts:
 
 ## Backend API Set-up
 Setting up the development server for the backend api
-`cd api`
-`npm install`
-`npm start`
+```cd api```
+```npm install```
+```npm start```
 
 The server will run on port `:5000`
 
@@ -21,9 +27,9 @@ The server will run on port `:5000`
 ## Frontend Set-up
 Open up another terminal and enter the following to run the frontend dev server:
 
-`cd client`
-`npm install`
-`npm start`
+```cd client```
+```npm install```
+```npm start```
 
 **NOTE** 
 Currently the backend API is set to run local port `:5000` and the frontend runs on the local port `:3000`
@@ -42,14 +48,14 @@ that routes all api calls to that address. This line must match the address that
 | -------- | ----------------- | ----------- |
 | /        | GET | Description of the exercise |
 | /patients| GET | List of patients          |
-| /patients?name=[search_query]| GET | List of patients filtered by name search  |
+| /patients?name=[name]| GET | List of patients filtered by name search  |
 
 
 ## Post-mortem
 
-### What could be imporved upon with more time
+### What could be improved upon with more time
  + Unit Testing could have been more comprehensive on the front-end with more time + tools(enzyme, supertest)
- + Break down components into even smaller modules
+ + Break down components into even smaller re-usable modules (like Search and Error)
  + Better error handling and validation
 
 
