@@ -2,10 +2,8 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 var fs = require('fs');
-var store; // our patientdata
-const static_store = require('./patients.json') // static data
+var store; // our patient data
 
-//app.use(bodyParser.json())
 app.use(cors())
 
 // async reading of the json file
@@ -20,7 +18,7 @@ app.get('/', (req, res) => {
 });
 
 
-//Accepts ?name= query to filter results
+// Filter results by passing ?name= query paramter
 app.get('/patients', (req, res) => {
   if (!req.query.name) {
     return res.json(store)
