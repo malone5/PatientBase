@@ -1,0 +1,6 @@
+# Ignore files
+package-lock.json
+
+# Ignore Folders
+node_modules/
+build/
