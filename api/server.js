@@ -19,6 +19,8 @@ app.get('/', (req, res) => {
   res.json('Welcome to patientbase!')
 });
 
+
+//Accepts ?name= query to filter results
 app.get('/patients', (req, res) => {
   if (!req.query.name) {
     return res.json(store)
