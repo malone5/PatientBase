@@ -1,12 +1,12 @@
 # PatientBase
-PatientBase is web application build with a backend using Node.js/Express.js and a fronend using React.js. PatientBase
-allows the user 2 major functions. (1) The ability to search a patient data set and (2) lookup specific records based on their Medicall Record Number (MRN)
+PatientBase is a web application built with a backend using Node.js/Express.js and a front-end using React.js. PatientBase
+allows the user 2 major functions. (1) The ability to search a patient data set and (2) the ability to lookup specific records based on their Medical Record Number (MRN)
 
-To search patient select the [Patients] tab and type in a name. The table with automacally filter and allows the user to sort on id, name, or MRN. You can also
+To search a patient, select the [Patients] tab and type in a name. The table will automatically filter and allow the user to sort on id, name, or MRN. You can also
 navigate straight to a patient record by clicking on their MRN.
 
-To look up a specific patient record, select the [MRM Lookup] tab, enter a valid MRN and press enter to submit.
-If a match was found on the MRN the patient record will display.
+To look up a specific patient record, select the [MRN Lookup] tab, enter a valid MRN and press enter to submit.
+If a match was found on the MRN, the patient record will display.
 
 
 
@@ -32,11 +32,11 @@ Open up another terminal and enter the following to run the frontend dev server:
 ```npm start```
 
 **NOTE** 
-Currently the backend API is set to run local port `:5000` and the frontend runs on the local port `:3000`
+Currently, the backend API is set to run on local port `:5000` and the frontend runs on local port `:3000`
 
-In the client package.json there is a line 
+In the client package.json the line 
 ` "proxy": "http://localhost:5000/", `
-that routes all api calls to that address. This line must match the address that the backend API is running on
+that routes all api calls to that address. This line must match the address that the backend API is running on.
 
 
 
@@ -48,14 +48,14 @@ that routes all api calls to that address. This line must match the address that
 | -------- | ----------------- | ----------- |
 | /        | GET | Description of the exercise |
 | /patients| GET | List of patients          |
-| /patients?name=[name]| GET | List of patients filtered by name search  |
+| /patients?name=[:name]| GET | List of patients filtered by name param  |
 
 
 ## Post-mortem
 
 ### What could be improved upon with more time
  + Unit Testing could have been more comprehensive on the front-end with more time + tools(enzyme, supertest)
- + Break down components into even smaller re-usable modules (like Search and Error)
+ + Break down components into smaller re-usable modules (like Search and Error)
  + Better error handling and validation
 
 
