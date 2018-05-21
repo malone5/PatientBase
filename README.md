@@ -27,6 +27,8 @@ Setting up the development server for the backend api
 
 > ```npm start```
 
+> ```npm test``` For running tests
+
 
 The server will run on port `:5000`
 
@@ -39,6 +41,8 @@ Open up another terminal and enter the following to run the frontend dev server:
 > ```npm install```
 
 > ```npm start```
+
+> ```npm test``` For running tests
 
 **NOTE** 
 Currently, the backend API is set to run on local port `:5000` and the frontend runs on local port `:3000`
