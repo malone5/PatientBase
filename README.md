@@ -13,7 +13,7 @@ If a match was found on the MRN, the patient record will display.
 ## Tool versions used
 + Node >= 6
 + npm >= 5
-
++ create-react-app (to reduce time spent on configuration/overhead)
 
 ## Backend API Set-up
 Setting up the development server for the backend api
