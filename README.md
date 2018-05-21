@@ -15,6 +15,10 @@ If a match was found on the MRN, the patient record will display.
 + npm >= 5
 + create-react-app (to reduce time spent on configuration/overhead)
 
+
+## Running the application locally
+> `git clone https://github.com/malone5/PatientBase`
+
 ## Backend API Set-up
 Setting up the development server for the backend api
 > ```cd api```
